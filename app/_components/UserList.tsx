@@ -46,6 +46,11 @@ const UserList: React.FC = () => {
         Add New User
       </button>
       <div className="grid gap-4 py-5 mt-8">
+        {users.length === 0 && !error && !loading && (
+          <div className="  h-40 flex items-center justify-center">
+            <p className=" text-xl">No record found...</p>
+          </div>
+        )}
         {users.map((user) => (
           <div
             key={user.id}
