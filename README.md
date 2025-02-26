@@ -1,3 +1,5 @@
+# User Management Frontend
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -5,20 +7,23 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+
 pnpm dev
-# or
-bun dev
+
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project integrates with a NestJS backend API to perform CRUD operations (Create, Read, Update, Delete) on user data, including personal info, contact details, addresses, and academic backgrounds. The form wizard culminates in a resume-like preview, and the user management section allows viewing, updating, and deleting users.
+
+## Features
+- **Multi-Step Form Wizard**: Collects user data across four steps with a resume-like preview in the final step.
+- **CRUD Operations**: Create, read, update, and delete user records via API calls.
+- **User Management**: View a list of all users, see individual user details in a resume-like format, and manage records.
+- **Input Validation**: Ensures data integrity using React Hook Form.
+- **Responsive Design**: Styled with Tailwind CSS for a modern, mobile-friendly UI.
 
 ## Learn More
 
